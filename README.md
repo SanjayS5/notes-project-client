@@ -1,3 +1,9 @@
+This project is the frontend for the notes application. It provides the user with an interface to create new notes, edit them, and delete the notes. They can also retrieve specific notes if they want to view or modify them, and they can also see a list of all the notes they've made. The user has to be logged in to use the site. For the moment, the site only supports a single user. 
+
+The app is built in React.
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
