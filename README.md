@@ -1,6 +1,62 @@
-This project is the frontend for the notes application. It provides the user with an interface to create new notes, edit them, and delete the notes. They can also retrieve specific notes if they want to view or modify them, and they can also see a list of all the notes they've made. The user has to be logged in to use the site. For the moment, the site only supports a single user. 
+Project Name: Parchment – A simple personal journal
+Project Description: 
 
-The app is built in React.
+This application allows a user to sign up, login, and create their own notes or personal journal entries. The user will be able to create a new entry, along with the ability to edit and delete those entries. 
+
+Tech Stack: 
+
+•	React
+•	React Router
+•	React-Bootstrap
+•	HTML
+•	Python
+•	AWS Cognito
+•	AWS Amplify
+•	AWS API Gateway
+•	AWS Lambda
+•	AWS DynamoDB
+•	Serverless Framework 
+•	GitHub
+
+How I built the application:
+
+I started by developing the API for Parchment on AWS. I created the lambda functions for all the main CRUD operations, linking them to DynamoDB and API gateway. Once these were tested and determined to be working correctly, I built the frontend user interface in React and linked the API to it. Following this, I uploaded the React app and ensured that it is now live on the Internet. 
+
+The frontend was built utilising a tutorial: https://serverless-stack.com/chapters/create-a-new-reactjs-app.html
+
+Most of the code is from there, however I did need to learn React to modify the code to my needs. 
+
+How to run the application: 
+
+You can access the application through this link:
+http://parchment.com.s3-website-ap-southeast-2.amazonaws.com/
+
+How to test the application:
+
+Tests can be run using the Serverless Framework. For example:
+$ serverless invoke local --function create --path mocks/create-event.json
+
+This code invokes the “create” function locally, retrieving the test values from the “mocks” directory. 
+
+Software tools used:
+
+•	VS Code
+•	AWS Console
+
+User Flow:
+
+ 
+Login: The user would first have to sign up, then login from this page. 
+
+
+ Homepage: The homepage, utilising the GET request to list all the results from DynamoDB. From here, the user could click create a new note and be taken to the page below.
+
+
+ 
+Creating a new note: The user can create the note, click “Create” and they will be redirected the homepage.
+ Editing or deleting an existing note: Alternatively, the user could decide to click on an existing note and chose to edit it or delete it from this page. The user will then be redirected to the homepage.  
+
+
 
 
 
