@@ -3,6 +3,11 @@
 
 This application allows a user to sign up, login, and create their own notes or personal journal entries. The user will be able to create a new entry, along with the ability to edit and delete those entries. 
 
+### Architecture Diagram
+
+![Screen Shot 2020-01-16 at 1 13 35 pm](https://user-images.githubusercontent.com/34014570/72482375-5dceb600-3862-11ea-8d14-aebb496065ff.png)
+
+
 ### Tech Stack: 
 
 •	React
